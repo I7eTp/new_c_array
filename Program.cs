@@ -45,6 +45,8 @@ int max = Max(
 
 Console.WriteLine(max);
 */
+
+/*
 //Поиск максимума из "9" 
 //Создание массива
 int Max(int arg1, int arg2, int arg3)
@@ -62,3 +64,25 @@ int max = Max(
     Max(array[3], array[4], array[5]), 
     Max(array[6], array[7], array[8]));
     Console.WriteLine(max);
+*/
+
+// Массив 
+Console.Write("Ваше число  ");
+int find = int.Parse(Console.ReadLine()!);
+
+int [] array = {11, 12, 13, 44, 11, 25, 46, 17, 58};
+int n = array.Length;
+
+int index = 0;
+while (index < n) 
+{
+    if(array[index] == find)
+    {
+        Console.WriteLine(index);
+    }
+   /* else
+    {
+        Console.WriteLine("Ваше число не подошло");
+    }  */
+    index++;    //index = index + 1;
+}
